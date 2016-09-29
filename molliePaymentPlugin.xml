@@ -1,0 +1,53 @@
+﻿<genxml>
+  <files />
+  <hidden>
+    <index>99</index>
+  </hidden>
+  <textbox>
+    <ctrl>
+      <![CDATA[molliepayment]]>
+    </ctrl>
+    <name>
+      <![CDATA[Mollie Payment]]>
+    </name>
+    <icon>
+      <![CDATA[]]>
+    </icon>
+    <group>
+      <![CDATA[Admin]]>
+    </group>
+    <path>
+      <![CDATA[/DesktopModules/NBright/DnnCMollie/Payment.ascx]]>
+    </path>
+    <help>
+      <![CDATA[]]>
+    </help>
+    <roles>
+      <![CDATA[Administrators]]>
+    </roles>
+    <description>
+      <![CDATA[]]>
+    </description>
+    <assembly>
+      <![CDATA[MolliePaymentProvider]]>
+    </assembly>
+    <namespaceclass>
+      <![CDATA[DnnC.Mollie.DnnCMolliePaymentProvider]]>
+    </namespaceclass>
+  </textbox>
+  <checkbox>
+    <hidden>
+      <![CDATA[False]]>
+    </hidden>
+    <active>
+      <![CDATA[True]]>
+    </active>
+  </checkbox>
+  <dropdownlist>
+    <providertype selectedtext="Payments">
+      <![CDATA[07]]>
+    </providertype>
+  </dropdownlist>
+  <checkboxlist />
+  <radiobuttonlist />
+</genxml>

@@ -1,0 +1,60 @@
+﻿<dotnetnuke type="Package" version="5.0">
+	<packages>
+		<package name="DnnCMollie" type="Module" version="1.0.0">
+			<friendlyName>DnnCMollie</friendlyName>
+			<description>DnnCMollie: Mollie Payment provider for NBrightStore (3.5)</description>
+			<iconFile />
+			<owner>
+				<name>G Barlow</name>
+				<organization>DnnConsulting</organization>
+				<url>http://www.dnnconsulting.nl</url>
+				<email>info@dnnconsulting.nl</email>
+			</owner>
+			<license>
+        THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT 
+        WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE 
+        PROGRAM “AS IS” WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT 
+        NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR 
+        PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. 
+        SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR 
+        OR CORRECTION.
+        YOU MAY NOT REDISTRIBUTE, NOT VIEW THE SOURCE CODE, NOT COPY THIS SOFTWARE.  
+			</license>
+			<releaseNotes>v1.0.0</releaseNotes>
+			<components>
+				<component type="ResourceFile">
+					<resourceFiles>
+						<basePath>DesktopModules\NBright\DnnCMollie</basePath>
+						<resourceFile>
+							<name>DnnCMollie_Resource.zip</name>
+						</resourceFile>
+					</resourceFiles>
+				</component>
+				<component type="Assembly">
+					<assemblies>
+						<assembly>
+							<path>bin</path>
+              <name>MolliePaymentProvider.dll</name>
+							<sourceFileName>MolliePaymentProvider.dll</sourceFileName>
+						</assembly>
+            <assembly>
+              <path>bin</path>
+              <name>DnnC.Mollie.Api.dll</name>
+              <sourceFileName>DnnC.Mollie.Api.dll</sourceFileName>
+            </assembly>
+					</assemblies>
+				</component>
+				<component type="File">
+					<files>
+						<basePath>DesktopModules\NBright\NBrightBuy\Plugins</basePath>
+						<file>
+							<path></path>
+							<name>molliePaymentPlugin.xml</name>
+							<sourceFileName>molliePaymentPlugin.xml</sourceFileName>
+						</file>
+					</files>
+				</component>
+			</components>
+		</package>
+	</packages>
+</dotnetnuke>

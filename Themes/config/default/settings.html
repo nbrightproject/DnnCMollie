@@ -1,0 +1,94 @@
+[<tag id="resourcepath" type="meta" value="/DesktopModules/NBright/DnnCMollie/App_LocalResources/" />]
+
+
+<br />
+
+<div id="pageactionssource">
+    <!-- Page actions are moved into header bar - also exist at page bottom-->
+    <div class="col-xs-9 col-sm-9">
+        <a href="#" class="show-sidebar">
+            <i class="fa fa-bars"></i>
+        </a>
+        <div class="actionbuttonwrapper">
+            [<tag id="cmdSave" type="linkbutton" cssclass="btn btn-primary" resourcekey="General.cmdSaveButton" commandname="save" />]
+        </div>
+    </div>
+    <div class="col-xs-3 col-sm-3 top-panel-right">
+        [<tag type="selectlocalebutton" size="32" />]
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-xs-12 col-sm-12">
+        <div class="box">
+
+            <!-- Start : Header -->
+            <div class="box-header">
+                <div class="box-name">
+                    <i class="fa fa-search"></i><span>DnnCMollie Payment</span>
+                </div>
+            </div><!-- ./End : Header -->
+
+            <div class="box-content">
+                <div class="form-horizontal dnnForm">
+
+                    <!-- Start : Cart description -->
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">[<tag type="valueof" resourcekey="Payment.settingsCartDescription" />]</label>[<tag type="editflag" />]
+                        <div class="col-sm-6">[<tag id="cartdescription" cssclass="form-control" type="textbox" Text="{COMPANYNAME} Shopping cart" lang="{Settings:editlanguage}" />]</div>
+                    </div><!-- ./End : Cart description -->
+
+                    <!-- Start : Bank dropdown text -->
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">[<tag type="valueof" resourcekey="Payment.settingsBankdropdowntext" />]</label>[<tag type="editflag" />]
+                        <div class="col-sm-6">[<tag id="bankdropdowntext" cssclass="form-control" type="textbox" Text="" lang="{Settings:editlanguage}" />]</div>
+                    </div><!-- ./End : Bank dropdown text -->
+
+                    <hr />
+
+                    <!-- Start : checkout template -->
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">[<tag type="valueof" resourcekey="Payment.settingsCheckouttemplate" />]</label>[<tag type="editflag" />]
+                        <div class="col-sm-6">[<tag id="checkouttemplate" cssclass="form-control" type="textbox" Text="methodselection.html" lang="{Settings:editlanguage}" />]</div>
+                    </div><!-- ./End : checkout template -->
+
+                    <!-- Start : Mollie TEST Api key -->
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">[<tag type="valueof" resourcekey="Payment.settingsTestApiKey" />]</label>
+                        <div class="col-sm-6">[<tag id="testapikey" cssclass="form-control" type="textbox" Text="" />]</div>
+                    </div><!-- ./ : Mollie TEST Api key -->
+
+                    <!-- Start : Mollie LIVE Api key -->
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">[<tag type="valueof" resourcekey="Payment.settingsLiveApiKey" />]</label>
+                        <div class="col-sm-6">[<tag id="liveapikey" cssclass="form-control" type="textbox" Text="" />]</div>
+                    </div><!-- ./ : Mollie LIVE Api key -->
+
+                    <!-- Start : Test mode -->
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">[<tag type="valueof" resourcekey="Payment.settingsTestMode" />]</label>
+                        <div class="col-sm-6">[<tag id="testmode" type="checkbox" />]</div>
+                    </div><!-- ./End : Test mode -->
+
+                    <hr />
+
+                    <!-- Start : Debug mode -->
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">[<tag type='valueof' resourcekey='General.DebugMode' />]</label>
+                        <div class="col-sm-6"><div class="dnnFormItem">[<tag id="debug.mode" type="checkbox" resourcekey="Settings.debugmode" />]</div></div>
+                    </div>
+                    <hr />
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label"></label>
+                        <div class="col-sm-3">[<tag type="valueof" xpath="genxml/debugmsg" />]</div>
+                    </div><!-- ./End : Debug mode -->
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="clearfix"></div>
